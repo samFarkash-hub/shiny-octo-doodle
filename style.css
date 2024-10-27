@@ -1,0 +1,75 @@
+/* Styling the table to create a grid */
+table {
+    border-collapse: collapse;
+    margin: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  td {
+    border: 2px solid #ff6f61;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    border: 2px solid #c50fe6;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    border-radius: 12px; /* Rounded corners */
+    font-size: 50px;
+    color:#c50fe6;
+    
+  }
+  
+  /* Highlight when the cell is focused (optional) */
+  td[contenteditable="true"]:focus {
+    outline: 2px solid rgb(255, 0, 174);
+  }
+  /* Hover effect */
+td:hover {
+    background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+    transform: scale(1.05); /* Slight zoom-in effect on hover */
+  }
+
+  /* Use flexbox to center the table */
+body, html {
+    height: 100%;  /* Make sure the body and html take up the full viewport height */
+    margin: 0;     /* Remove any default margin */
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center;     /* Vertically center the content */
+    background-color: #f3d4bf;
+  }
+
+ /* Container for the table and title */
+.container {
+    display: flex;
+    flex-direction: column;  /* Stack the title and the table vertically */
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Styling for the title */
+h1,label,input {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 70px;
+    margin-bottom: 20px;  /* Adds space between the title and the table */
+    color: #f75c76;
+  }
+
+
+
+button:active {
+    box-shadow: none;
+    transform: translateY(5px); /* Moves the button down when clicked */
+}
+
+button {
+    background-color: #ff00bf;
+    color: rgb(251, 222, 239);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 5px #c66900;
+    font-size: 16px;
+    cursor: pointer;
+}
